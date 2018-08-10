@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mainlogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_analise"
+                android:onClick="bt1"
+                android:layout_weight="1"
+                android:text="Análise do Tema" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/CategoryStyle"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_plano"
+                android:onClick="bt2"
+                android:text="Plano de Redação" />
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_estrutura"
+                android:onClick="bt3"
+                android:layout_weight="1"
+                android:text="Estrutura Textual" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_arquitetura"
+                android:onClick="bt4"
+                android:text="Arquitetura de Parágrago" />
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_textual"
+                android:onClick="bt6"
+                android:text="Arquitetura do Texto" />
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_recursos"
+                android:onClick="bt5"
+                android:text="Recursos Argumentativos"
+                android:breakStrategy="balanced"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_erros"
+                android:onClick="bt7"
+                android:text="Erros Comuns" />
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_dicas"
+                android:onClick="bt8"
+                android:text="Dicas" />
+
+            <Button
+                style="@style/CategoryStyle"
+                android:drawableTop="@drawable/ic_galeria"
+                android:onClick="bt9"
+                android:text="Galeria" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
